@@ -13,7 +13,6 @@ html {
 }
 
 li {
-  /* ??? */
   list-style-type: none;
   width: 100%;
 
@@ -23,7 +22,6 @@ li {
 /* Layout */
 
 .container {
-  /* ??? */
   display: flex;
   flex-flow: column;
   align-items: center;
