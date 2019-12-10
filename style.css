@@ -15,6 +15,9 @@ html {
 li {
   /* ??? */
   list-style-type: none;
+  width: 100%;
+
+  
 }
 
 /* Layout */
@@ -45,7 +48,7 @@ h1 {
 /* Gallery */
 ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
 
 }
 
@@ -68,7 +71,7 @@ change the layout of the gallery to show 2 columns
   }
 
   li {
-    /* ??? */
+    width: 50%;
   }
 }
 
@@ -76,7 +79,7 @@ change the layout of the gallery to show 2 columns
 When there's room for more than 2 columns,
 change the layout of the gallery to show 3 columns
 */
-@media screen and (min-width: /* ??? */) {
+@media screen and (min-width: 800px) {
   li {
     width: calc(100% / 3);
   }
@@ -86,5 +89,11 @@ change the layout of the gallery to show 3 columns
 When there's room for more than 3 columns,
 change the layout of the gallery to show 4 columns
 */
+
+@media screen and (min-width: 1200px) {
+  li {
+    width: 25%;
+  }
+}
 
 /* ??? Write your own. You got this :) */
