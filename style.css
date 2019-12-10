@@ -14,12 +14,16 @@ html {
 
 li {
   /* ??? */
+  list-style-type: none;
 }
 
 /* Layout */
 
 .container {
   /* ??? */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   max-width: 1600px; /* 4 x image */
 }
 
@@ -39,7 +43,9 @@ h1 {
 
 
 /* Gallery */
-
+.gallery {
+  display: flex;
+}
 /*
 ??? {
   ???
