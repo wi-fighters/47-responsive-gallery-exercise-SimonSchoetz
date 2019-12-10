@@ -17,3 +17,8 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 # Acknowledgements
 
 Images from https://pixabay.com/
+
+
+----------
+
+Just in case you lose the link: https://github.com/wi-fighters/47-responsive-gallery-exercise-SimonSchoetz
