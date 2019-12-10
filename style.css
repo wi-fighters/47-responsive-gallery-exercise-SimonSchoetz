@@ -43,15 +43,11 @@ h1 {
 
 
 /* Gallery */
-.gallery {
+ul {
   display: flex;
+  flex-flow: row wrap;
+
 }
-/*
-??? {
-  ???
-  ???
-}
-*/
 
 /* Keep image proportions on resize */
 img {
