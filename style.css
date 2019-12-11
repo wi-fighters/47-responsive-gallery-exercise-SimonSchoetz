@@ -44,10 +44,10 @@ h1 {
 
 
 /* Gallery */
+/* Mobile first, <400px*/
 ul {
-  display: flex;
-  flex-flow: wrap;
-
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* Keep image proportions on resize */
@@ -62,14 +62,10 @@ When there's room for more than 1 column of 400px-wide images,
 change the layout of the gallery to show 2 columns
 */
 @media screen and (min-width: 400px) {
-
   ul {
-    /* ??? */
-    /* ??? */
-  }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-  li {
-    width: 50%;
   }
 }
 
@@ -78,8 +74,9 @@ When there's room for more than 2 columns,
 change the layout of the gallery to show 3 columns
 */
 @media screen and (min-width: 800px) {
-  li {
-    width: calc(100% / 3);
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -89,9 +86,9 @@ change the layout of the gallery to show 4 columns
 */
 
 @media screen and (min-width: 1200px) {
-  li {
-    width: 25%;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* ??? Write your own. You got this :) */
